@@ -1,12 +1,20 @@
-## Welcome to GitHub Pages
+## Welcome :)
 
-You can use the [editor on GitHub](https://github.com/BryanCarty/Co-Op-Portfolio/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Welcome to my portfolio website.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+My name is Bryan Carty. I'm currently a computer science student at the University Of Limerick.
 
-### Markdown
+Below, you will find my skills, interests and the projects I've partook in during my academic career. 
+### Personal Statement
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+I like to pride myself on being a highly motivated and hardworking individual. Such traits can be seen in my excellent exam results.
+
+Junior Cert results: (7A'S,3B'S,1C). Note: These were the best results in my school that year.
+Leaving Cert results: (556 points). Note: These were the third best results in my school that year.
+
+I look forward to continuing the same degree of academic success throughout my third level education.
+
+My eventual career goal is to become a fully-qualified and experienced software developer, with the longer-term aspiration of starting my own business.
 
 ```markdown
 Syntax highlighted code block
