@@ -60,8 +60,9 @@ Technical Skills Required:
 
 - Java
 
-```markdown
+
 Snippet:
+```markdown
 
 public static String remove(int index) {
 //Data Description
@@ -111,6 +112,47 @@ public static int move(String from, String to, boolean before) {
 }
 
 ```
+
+Project2: Non Profit Organization Website.
+
+Brief: Develop a website for a Non Profit Organization with a donate page and suitable contact resource.
+
+Technical Skills Required:
+
+- HTML
+
+- CSS
+
+- JavaScript
+
+Snippet:
+```markdown
+<header>
+        <div class="container">
+            <img src="Assets/GreenWillLogo.png" height="50px" width="600px" alt = logo class="logo">
+            <nav>
+                <ul>
+                    <li> <a href="HomePage.html">HOME</a> </li>
+                    <li> <a href="AboutPage.html">ABOUT</a> </li>
+                    <li> <a href="ContactPage.html">CONTACT</a> </li>
+                    <li> <a href="DonatePage.html">DONATE</a></li>    
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section>
+        <div class="boxes">
+            <img class="w-image"src="Assets/plantingtree.jpg"alt="Father & Son Planting A Tree"style="width:560px;height:auto;">
+            <br>
+            <p style="margin:0 auto; font-size:20px; max-width:500px">One and a half acres of forest is cut down every second. At this rate, it is estimated that within 100 years there will be no rainforests left.<br><br>
+            By donating, you are enabling our team to plant trees where reforestation is needed the most.
+            For every €1 donated, one tree is planted.<br><br>
+            Join us on our mission to plant 300 million trees by the year 2025.
+            </p>
+        </div>
+```
+
+
 
 
 
