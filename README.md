@@ -26,7 +26,7 @@ My eventual career goal is to become a fully-qualified and experienced software 
 
 - Reading
 
--The Stock Market
+- The Stock Market
 
 ### Achievements
 - 1st Home, Carol Kelly Memorial Run
@@ -45,24 +45,74 @@ My eventual career goal is to become a fully-qualified and experienced software 
 
 - Completing road warden course
 
+- Qualifying to represent my school at Connacht cross country running
+
+- Getting on my schools top 10 fittest list after running 107 lengths in the annual bleap fitness test
+
+- Being picked to be a buddy to a group of incoming first year students during secondary school
+
+### Top 5 Projects
+Project 1: Develop a spreadsheet system.
+
+Brief: Develop a Java class (or classes, if necessary) to allow sheet names to be managed as a list of names.
+
+Technical Skills Required:
+
+- Java
+
 ```markdown
-Syntax highlighted code block
+Snippet:
 
-# Header 1
-## Header 2
-### Header 3
+public static String remove(int index) {
+//Data Description
+	String output="";
+//Algorithm Description	
+	for(int loop=0; loop<spreadsheet.length; loop++) {
+		if((index-1)==loop&&positionCounter>1){
+			for(int l=loop; l<spreadsheet.length-1; l++) {
+				spreadsheet[l]=spreadsheet[l+1];
+			}
+			positionCounter--;
+			spreadsheet[spreadsheet.length-1]=new String();
+			output = spreadsheet[loop];
+		}	
+	}
+	return output;
+}
 
-- Bulleted
-- List
 
-1. Numbered
-2. List
 
-**Bold** and _Italic_ and `Code` text
+public static int move(String from, String to, boolean before) {
+//Data Description
+	SpreadsheetUtilityMethods UtilityMethodsObject = new SpreadsheetUtilityMethods();
+	boolean inList1 = UtilityMethodsObject.onList(spreadsheet, from);
+	boolean inList2 = UtilityMethodsObject.onList(spreadsheet, to);
+	int indexFrom = UtilityMethodsObject.indexOf(spreadsheet, from);
+	int indexTo = UtilityMethodsObject.indexOf(spreadsheet, to);
+	String temp = spreadsheet[indexFrom];
+	int output = -1;
+//Algorithm Description
+	if(from!=to && inList1==true && inList2==true) {
+		if(before==true) {
+			for(int loop = indexFrom; loop<indexTo-1; loop++) {
+				spreadsheet[loop]=spreadsheet[loop+1];
+			}
+			spreadsheet[indexTo-1]=temp;
+			output = indexTo-1;
+		}else {
+			for(int loop = indexFrom; loop<indexTo; loop++) {
+				spreadsheet[loop]=spreadsheet[loop+1];
+			}
+			spreadsheet[indexTo]=temp;
+			output = indexTo;
+		}
+	}
+	return output;
+}
 
-[Link](url) and ![Image](src)
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+
+
 
 
