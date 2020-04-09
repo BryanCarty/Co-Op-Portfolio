@@ -113,7 +113,7 @@ public static int move(String from, String to, boolean before) {
 
 ```
 
-Project2: Non Profit Organization Website.
+Project 2: Non Profit Organization Website.
 
 Brief: Develop a website for a Non Profit Organization with a donate page and suitable contact resource.
 
@@ -124,6 +124,8 @@ Technical Skills Required:
 - CSS
 
 - JavaScript
+
+- Team Work
 
 Snippet:
 ```markdown
@@ -151,6 +153,72 @@ Snippet:
             </p>
         </div>
 ```
+
+Project 3: Random Wordsearch Generator
+
+Brief: Create a Wordsearch puzzle by developing a class that will be used to generate puzzles using a two-dimensional grid
+
+Technical Skills Required: 
+
+- Java
+
+Snippet:
+```markdown
+
+public WordSearchPuzzle(String wordFile, int wordCount, int shortest, int longest){
+        puzzleWords=loadWordsFromFile(wordFile);
+        List<String> newWords = new ArrayList<String>(wordCount);
+        for(int counter = 0; counter<wordCount; counter++){
+            int randomNum = (int)(Math.random()*puzzleWords.size());
+            String randWord = puzzleWords.get(randomNum);
+            if(randWord.length()>=shortest&&randWord.length()<=longest&&newWords.contains(randWord)==false){
+                newWords.add(randWord);
+            }else{
+                counter--;
+            }
+        }
+        puzzleWords=newWords;
+        generateWordSearchPuzzle();
+    }    
+
+    private static ArrayList<String> loadWordsFromFile(String fileName){
+        try{
+            FileReader aFileReader = new FileReader(fileName);
+            BufferedReader aBufferReader = new BufferedReader(aFileReader);
+            ArrayList<String> words = new ArrayList<String>();
+            String aWord;
+            aWord = aBufferReader.readLine();
+            while(aWord!=null){
+                words.add(aWord.toUpperCase());
+                aWord=aBufferReader.readLine();
+            }
+            aBufferReader.close();
+            aFileReader.close();
+            return words;
+        }catch(IOException x){
+            return null;
+        }
+    }
+
+    public List<String> getWordSearchList(){
+        return puzzleWords;
+    }
+    
+    private void generateWordSearchPuzzle(){
+        helperClassObject.gridDimensions(puzzleWords);
+        List<String> rightHorizontalWords=helperClassObject.horizontalRightWords();
+        List<String> leftHorizontalWords=helperClassObject.horizontalLeftWords();
+        List<String> upVerticalWords=helperClassObject.verticalUpWords();
+        List<String> downVerticalWords=helperClassObject.verticalDownWords();
+        helperClassObject.fillGrid(rightHorizontalWords, leftHorizontalWords, upVerticalWords, downVerticalWords);
+        puzzle = helperClassObject.returnGrid();
+    }
+    
+    public char[][] getPuzzleAsGrid(){
+        return puzzle;
+    }
+```
+
 
 
 
