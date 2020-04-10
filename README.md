@@ -45,7 +45,7 @@ My eventual career goal is to become a fully-qualified and experienced software 
 - Completeing level 1 Acquatics Coaching Course
 
 - Competeing at National Division 1 Swimming
-Note: This involved a lot of training, including waking up at 5am to train before school.
+Note: To get to this level involved a lot of training, including waking up at 5am to train before school.
 
 - Completing road warden course
 
