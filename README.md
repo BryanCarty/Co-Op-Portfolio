@@ -83,7 +83,6 @@ Technical Skills Required:
 
 Snippet:
 ```markdown
-
 public static String remove(int index) {
 //Data Description
 	String output="";
