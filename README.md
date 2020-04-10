@@ -4,7 +4,7 @@ Welcome to my portfolio website.
 
 My name is Bryan Carty. I'm currently a computer science student at the University Of Limerick.
 
-Below, you will find my skills, interests and the projects I've partook in during my academic career. 
+Below, you will find details of my skills, interests and the projects I participated in during my academic career. 
 
 ### Personal Statement
 
