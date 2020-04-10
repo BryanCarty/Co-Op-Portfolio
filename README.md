@@ -51,7 +51,7 @@ My eventual career goal is to become a fully-qualified and experienced software 
 
 - Being picked to be a buddy to a group of incoming first year students during secondary school
 
-### Top 5 Projects
+### 5 Sample Projects
 Project 1: Develop a spreadsheet system.
 
 Brief: Develop a Java class (or classes, if necessary) to allow sheet names to be managed as a list of names.
@@ -218,6 +218,107 @@ public WordSearchPuzzle(String wordFile, int wordCount, int shortest, int longes
         return puzzle;
     }
 ```
+
+Project 4: Payout Algorithm (Personal Project)
+
+Description: When pursuing a business idea it was necessary that I develop a very specific algorithm. This algorithm would calculate a persons payout by factoring in the persons day of entry into the contract as well as the quantity of contracts purchased.
+
+Technical Skills Required:
+
+- Java
+
+Note: I'm particularly proud of this project because it was the first time I required my knowledge of coding outside of college. It was also necessary that I figured out the maths for this algo before implementing it in code.
+
+Snippet:
+```markdown
+private void arithmatic() {
+//Data Declaration
+int totalDNum = (int)dayNum[dayNum.length-1];
+int totalDayNum = totalDNum;
+int totalDayNumCopy = totalDNum;
+this.dayCount = new int[totalDNum];
+//Algorithm Description
+
+
+//interDayRatioArray
+	//Data Declaration
+	int sumFact=0;
+	//Algorithm Description
+	while(totalDayNum>0) {
+		sumFact +=totalDayNum;
+		dayCount[totalDayNum-1]=totalDayNum;			//May Be ERRor Here?
+		totalDayNum--;
+	}	
+	
+	this.interDayRatio = new double[totalDNum];
+	for(int i = 0; i<totalDNum; i++) {
+		this.interDayRatio[i]=(double)totalDayNumCopy/sumFact;
+		totalDayNumCopy--;
+	}
+	
+	newInterDayRatio();
+	
+	this.interByPaid = new double[this.numWinningEntries];
+	for(int k = 0; k<this.interByPaid.length; k++) {
+		this.interByPaid[k]=(double)this.contractWorthBought[k]*this.interDayRatioPerPerson[k];
+		sumOfStepThree+=interByPaid[k];
+	}
+	stepFour = new double[numWinningEntries];
+	for(int f = 0; f<numWinningEntries; f++) {
+		stepFour[f] = (double)interByPaid[f]/sumOfStepThree;
+	}
+	for(int y =0; y<numWinningEntries; y++) {
+		sumOfAmountWinnersPaid+=contractWorthBought[y];
+	}
+	amountToBeDispersed = totalMoneyReceived-sumOfAmountWinnersPaid;
+	amountDispersedPerPerson = new double[numWinningEntries];
+	for(int i = 0; i<numWinningEntries; i++) {
+		amountDispersedPerPerson[i]=amountToBeDispersed*stepFour[i];
+	}
+	totalReturnedPerPerson = new double[numWinningEntries];
+	for(int z = 0; z<numWinningEntries; z++) {
+		totalReturnedPerPerson[z]=contractWorthBought[z]+amountDispersedPerPerson[z];
+	}
+	initialPricePerContract = new double[numWinningEntries];
+	postPricePerContract = new double[numWinningEntries];
+	for(int t=0; t<numWinningEntries; t++) {
+		initialPricePerContract[t]=contractWorthBought[t]/contractWorthBought[t];//Assumes all contracts worth 1 euro.
+		postPricePerContract[t]=totalReturnedPerPerson[t]/contractWorthBought[t];//as 1 euro also number of contracts.
+	}
+	percentGain = new double[numWinningEntries];
+	for(int r = 0; r<numWinningEntries; r++) {
+		percentGain[r]=(((double)postPricePerContract[r]-initialPricePerContract[r])/initialPricePerContract[r])*100;
+	}
+	winnerPercent = (sumOfAmountWinnersPaid/totalMoneyReceived)*100;
+	loserPercent = 100.0-winnerPercent;
+display();	
+}
+```
+
+Project 5: Rock, Paper, Scissors Game (Personal Project)
+
+Description: This was another project I did outside of college. For no other reason than just for the fun of it.
+
+Technical Skills: 
+
+- Java
+
+Snippet:
+```markdown
+while(amount==1){
+int compweaponNumber=(int)(Math.random()*3+1);
+System.out.println("Choose your weapon (rock,paper or scissors?)");
+weapon=input.nextLine();
+
+if(compweaponNumber==1){compWeapon="rock";}
+else if(compweaponNumber==2){compWeapon="paper";}
+else if(compweaponNumber==3){compWeapon="scissors";}
+
+System.out.printf("The computer chose %s\n", compWeapon);
+
+```
+
+
 
 
 
