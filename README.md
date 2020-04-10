@@ -116,6 +116,8 @@ public static int move(String from, String to, boolean before) {
 
 ```
 
+
+
 Project 2: Non Profit Organization Website.
 
 Brief: Develop a website for a Non Profit Organization with a donate page and suitable contact resource.
@@ -156,6 +158,8 @@ Snippet:
             </p>
         </div>
 ```
+
+
 
 Project 3: Random Wordsearch Generator.
 
@@ -221,6 +225,8 @@ public WordSearchPuzzle(String wordFile, int wordCount, int shortest, int longes
         return puzzle;
     }
 ```
+
+
 
 Project 4: Payout Algorithm (Personal Project).
 
@@ -297,6 +303,8 @@ this.dayCount = new int[totalDNum];
 	display();	
 	}
 ```
+
+
 
 Project 5: Rock, Paper, Scissors Game (Personal Project).
 
