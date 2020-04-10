@@ -6,6 +6,8 @@ My name is Bryan Carty. I'm currently a computer science student at the Universi
 
 Below, you will find details of my skills, interests and the projects I participated in during my academic career. 
 
+
+
 ### Personal Statement
 
 I like to pride myself on being a highly motivated and hardworking individual. Such traits can be seen in my excellent exam results.
@@ -18,6 +20,8 @@ I look forward to continuing the same degree of academic success throughout my t
 
 My eventual career goal is to become a fully-qualified and experienced software developer, with the longer-term aspiration of starting my own business.
 
+
+
 ### Interests
 
 - Coding
@@ -29,6 +33,8 @@ My eventual career goal is to become a fully-qualified and experienced software 
 - Reading
 
 - The Stock Market
+
+
 
 ### Achievements
 
@@ -55,11 +61,15 @@ Note: To get to this level involved a lot of training, including waking up at 5a
 
 - Being picked to be a buddy to a group of incoming first year students during secondary school
 
+
+
 ### Volunteering
 
 I have volunteered at community events in the past such as Ballygar Annual Carnival. 
 
 During my time in competitive swimming I volunteered as a time keeper at some events.
+
+
 
 ### 5 Sample Projects
 
