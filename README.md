@@ -45,6 +45,7 @@ My eventual career goal is to become a fully-qualified and experienced software 
 - Completeing level 1 Acquatics Coaching Course
 
 - Competeing at National Division 1 Swimming
+Note: This involved a lot of training, including waking up at 5am to train before school.
 
 - Completing road warden course
 
@@ -53,6 +54,12 @@ My eventual career goal is to become a fully-qualified and experienced software 
 - Getting on my schools top 10 fittest list after running 107 lengths in the annual bleap fitness test
 
 - Being picked to be a buddy to a group of incoming first year students during secondary school
+
+### Volunteering
+
+I have volunteered at community events in the past such as Ballygar Annual Carnival. 
+
+During my time in competitive swimming I volunteered as a time keeper at some events.
 
 ### 5 Sample Projects
 
